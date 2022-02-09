@@ -55,11 +55,32 @@ li a{
     font-family: sans-serif;
 }
 
+a:hover{
+    background-color: #e7e2cc;
+    color: #00555d;
+}
+
 #bienvenida{
     margin-top: 5px;
     background-image: url(../imagenes/salmon-salvaje.jpg);
     background-size: cover ;
     background-position: center;
+}
+
+h1{    
+    animation-name: animacion1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+@keyframes animacion1{
+    from{
+        transform: translatex(-1000px);
+    }
+    to{
+        transform: translatex(0);
+    }
 }
 
 #bienvenida h1{
@@ -231,13 +252,46 @@ main.mainproductos img{
 }
 /*seccion como comprar*/
 
-#primero{
-    justify-self: end;
-    border: #00555d 2px solid;
+.titulocompra{
+    text-align: center;
+    background-color: #00555d;
+    border-radius: 30px;
+    color: #e7e2cc;
+    margin-left: 10px;
 }
+.compra{
+    align-items: center;
+}
+
+.boxcompra{
+    margin: 20px;
+    border: #00555d 2px solid;
+    background-color: #e7e2cc;
+    color: #00555d;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#primero{    
+    align-content: center;
+    justify-self: end;  
+    transition: height 2s;  
+}
+#primero:hover{
+    height: 200px;
+}
+
 #tercero{
     justify-self: end;
-    border: #00555d 2px solid;
+}
+
+#segundo{
+    justify-self:left ;
+}
+
+#cuarto{
+    justify-self:left ;
 }
 
 /*grid*/
